@@ -297,6 +297,113 @@
             line-height: 1.7;
         }
 
+        /* About Section */
+        .about {
+            padding: 80px 80px;
+            background: #f8f9fa;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #5a6c8f;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 80px 80px;
+            background: white;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            height: 300px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(44, 62, 125, 0.95), transparent);
+            padding: 30px;
+            color: white;
+        }
+
+        .portfolio-overlay h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-overlay p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 80px;
+            background: linear-gradient(135deg, #2c3e7d 0%, #1a2654 100%);
+            color: white;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-content h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .contact-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: #fdb913;
+            color: #2c3e7d;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 20px;
+        }
+
+        .contact-email:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(253, 185, 19, 0.4);
+        }
+
         /* Footer */
         footer {
             background: #2c3e7d;
@@ -335,6 +442,18 @@
                 padding: 50px 30px;
             }
 
+            .about {
+                padding: 50px 30px;
+            }
+
+            .portfolio {
+                padding: 50px 30px;
+            }
+
+            .contact {
+                padding: 50px 30px;
+            }
+
             .section-title {
                 font-size: 32px;
             }
@@ -351,7 +470,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact us</a></li>
-            <li><a href="#" class="sign-up-btn">Get Started</a></li>
+            <li><a href="#contact" class="sign-up-btn">Get Started</a></li>
         </ul>
     </nav>
 
@@ -411,6 +530,69 @@
                 <h3>Social Media</h3>
                 <p>Strategic social media management that builds communities and drives engagement with your brand.</p>
             </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+            <p>AB.DESIGN is a creative advertising and content creation agency dedicated to transforming brands through innovative storytelling and compelling visual experiences.</p>
+            <p>With years of experience in the industry, we combine strategic thinking with creative excellence to deliver solutions that resonate with audiences and drive business growth.</p>
+            <p>Our team of passionate designers, strategists, and content creators work collaboratively to bring your vision to life and elevate your brand to new heights.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-overlay">
+                    <h3>Brand Campaign</h3>
+                    <p>Comprehensive brand strategy and visual identity</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-overlay">
+                    <h3>Social Media Content</h3>
+                    <p>Engaging content that drives audience engagement</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-overlay">
+                    <h3>Video Production</h3>
+                    <p>High-impact video content for digital platforms</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-overlay">
+                    <h3>Digital Advertising</h3>
+                    <p>Data-driven campaigns with measurable results</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-overlay">
+                    <h3>Creative Design</h3>
+                    <p>Beautiful design solutions that captivate</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-overlay">
+                    <h3>Content Strategy</h3>
+                    <p>Strategic content that tells your story</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Ready to transform your brand? Let's start a conversation about how we can help you achieve your goals.</p>
+            <p>Contact us today to discuss your project and discover what AB.DESIGN can do for you.</p>
+            <a href="mailto:aurora.grogan@icloud.com" class="contact-email">aurora.grogan@icloud.com</a>
         </div>
     </section>
 
